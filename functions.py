@@ -10,7 +10,7 @@ def read_format(filename):
     return df
 
 
-# Function to merge Crypto Price files and drop NAs
+# Function to merge Crypto Price files and drop NaNs
 def merge_data(df1, df2, on, name1, name2):
     df = df1.merge(df2, on=on, how="left", suffixes=(name1, name2))
     df = df.dropna(axis=0, how="any")
