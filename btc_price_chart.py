@@ -6,7 +6,7 @@ import functions as fn
 # Import, format and merge Crypto Price file
 df_btc = fn.read_format("coin_Bitcoin.csv")
 
-# Plot the Bitcoin and Ethereum prices
+# Plot the Bitcoin prices
 fig, ax = plt.subplots()
 ax.set_facecolor("gainsboro")
 df_btc.plot(ax=ax, kind="line", x="Date", y="Close", ylabel="BTC Close Price ($)",
