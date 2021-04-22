@@ -29,7 +29,7 @@ np_eth_price = np.array(eth_price)
 # Create array of % price ratios
 np_price_ratio = (np_eth_price / np_btc_price) * 100
 
-# Plot the price ratio
+# Plot the price ratios
 fig, ax = plt.subplots()
 ax.set_facecolor("gainsboro")
 ax.yaxis.grid(color="white", zorder=0)
